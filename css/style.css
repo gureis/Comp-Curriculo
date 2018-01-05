@@ -1,0 +1,152 @@
+/*
+Colors
+	# f4f4f4 (light white)
+	# dedede (light grey)
+	# ce4f17 (dark orange)
+	# cf6433 (light orange)
+*/
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f4f4f4;
+}
+
+.logo {
+	font-weight: 900; 
+	font-size: x-large !important;	
+	color: #ce4f17 !important;
+	text-decoration: none;
+}
+
+.menu > li > a {
+	color: black !important;
+}
+
+.menu > li > a:hover, .menu > li > a:focus {
+	font-weight: 700;
+	color: #cf6433 !important; 
+}
+
+.bg-img {
+	background-image: url("../img/homeBG.jpg");
+    background-repeat:no-repeat;
+}
+
+.home {
+	font-weight: 900;
+	color: black;
+	font-size: 42px;
+	text-align: center;
+	padding-top: 38%;
+	padding-bottom: 40%;
+}
+
+h1 {
+	font-weight: 900;
+	color: #cf6433;
+	font-size: 42px;
+}
+
+.btn-sobre {
+	background-color: #cf6433;
+	color: black;
+}
+
+.btn-sobre:hover {
+	background-color: #ce4f17;
+}
+
+.title {
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 4%;
+	color: black;
+	border-color: #ce4f17 !important;
+	padding-left: 3%;
+}
+
+.sobre {
+	background-color: #f4f4f4;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.card-box {
+	margin-top: 40px;
+	margin-bottom: 35px;
+	background-color: #dedede;
+	border: 2px solid #cf6433;
+	border-radius: 15px;
+	display: flex-inline;
+}
+
+.sobre-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+.sobre-list > li {
+	padding: 2%;
+}
+
+.sobre-list > li > strong {
+	color: black;
+}
+
+.sobre-list > li > span {
+	color: black;
+}
+
+.minhaFoto {
+	border-radius: 15px;
+	border: 2px solid #cf6433;
+	width: 100%;
+}
+
+.picture {
+	width: 100%;
+	margin: 6px;
+	padding-right: 4px;
+}
+
+@media (max-width: 767px) {
+	.centro-obj {
+		margin-top: 4%;
+	}	
+}
+ @media (min-width: 768px) {
+ 	.centro-obj {
+ 		margin-top: 60%;
+ 	}
+ }
+
+ @media (max-width: 991px) {
+ 	.home {
+		padding-top: 60%;
+		padding-bottom: 65%;
+	}
+ }
+
+ @media (min-width: 992px) {
+ 	.rectangle {
+		width: 200px;
+		height: 650px; 
+		background: #cf6433;
+	 }
+
+	.triangle-bottomleft {
+		width: 0;
+		height: 0; 
+		border-bottom: 650px solid #cf6433; 
+		border-right: 100px solid transparent; 
+	}
+
+	.triangle-topright { 
+		width: 0; 
+		height: 0; 
+		border-top: 650px solid #cf6433; 
+		border-left: 100px solid transparent; 
+	}
+ }
