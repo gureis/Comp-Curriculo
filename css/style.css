@@ -7,7 +7,7 @@ Colors
 */
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: #f4f4f4;
+	background-color: #fff;
 }
 
 .logo {
@@ -65,7 +65,7 @@ h1 {
 }
 
 .sobre {
-	background-color: #f4f4f4;
+	background-color: #fff;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 }
@@ -111,12 +111,21 @@ h1 {
 	padding-right: 4px;
 }
 
+.center-qualif {
+	padding-top: 8%;
+}
+
+.ff-title {
+	font-weight: 700;
+}
+
 @media (max-width: 767px) {
 	.centro-obj {
 		margin-top: 4%;
 	}	
 }
- @media (min-width: 768px) {
+
+@media (min-width: 768px) {
  	.centro-obj {
  		margin-top: 60%;
  	}
@@ -129,9 +138,31 @@ h1 {
 	}
  }
 
- @media (min-width: 992px) {
+ @media (min-width: 1623px) {
  	.rectangle {
-		width: 200px;
+		width: 150px;
+		height: 670px; 
+		background: #cf6433;
+	 }
+
+	.triangle-bottomleft {
+		width: 0;
+		height: 0; 
+		border-bottom: 670px solid #cf6433; 
+		border-right: 100px solid transparent; 
+	}
+
+	.triangle-topright { 
+		width: 0; 
+		height: 0; 
+		border-top: 670px solid #cf6433; 
+		border-left: 100px solid transparent; 
+	}
+ }
+
+ @media (min-width: 1398px) and (max-width: 1622px){
+ 	.rectangle {
+		width: 80px;
 		height: 650px; 
 		background: #cf6433;
 	 }
@@ -140,13 +171,35 @@ h1 {
 		width: 0;
 		height: 0; 
 		border-bottom: 650px solid #cf6433; 
-		border-right: 100px solid transparent; 
+		border-right: 50px solid transparent; 
 	}
 
 	.triangle-topright { 
 		width: 0; 
 		height: 0; 
 		border-top: 650px solid #cf6433; 
-		border-left: 100px solid transparent; 
+		border-left: 50px solid transparent; 
+	}
+ }
+
+ @media (min-width: 1279px) and (max-width: 1397px) {
+ 	.rectangle {
+		width: 40px;
+		height: 650px; 
+		background: #cf6433;
+	 }
+
+	.triangle-bottomleft {
+		width: 0;
+		height: 0; 
+		border-bottom: 650px solid #cf6433; 
+		border-right: 30px solid transparent; 
+	}
+
+	.triangle-topright { 
+		width: 0; 
+		height: 0; 
+		border-top: 650px solid #cf6433; 
+		border-left: 30px solid transparent; 
 	}
  }
