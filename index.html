@@ -1,57 +1,262 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>CN Clone</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
-</head>
-<body>
-	<div class="container">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<img src="assets/media/img/cartoonLogo.png" id="logo">
-		
-		<ul class="row" id="cardList">
-			<li class="col-12 col-9 col-3 col-6">
-				<div class="cardBox">
-					<img class="picture" src="assets/media/img/adventuretime.jpg">
-					<p class="cardText">Adventure Time</p>	
-				</div>	
-			</li>
-			
-			<li class="col-12 col-9 col-3 col-6">
-				<div class="cardBox">
-					<img class="picture" src="assets/media/img/gumball.jpg">
-					<p>O Incrível Mundo de Gumball</p>	
-				</div>
-			</li>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Fonts --> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet"> 
+    <!-- Custom Style-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-			<li class="col-12 col-9 col-3 col-6">
-				<div class="cardBox">
-					<img class="picture" src="assets/media/img/pokemon.jpg">
-					<p>Pokemon</p>	
-				</div>
-			</li>
+    <title>Currículo Gustavo Reis</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="container fixed-top">
+      <nav class="navbar navbar-expand-md navbar-light border border-top-0 border-right-0 border-left-0">
+        <div class="container">
+          <a class="navbar-brand logo" href="#home" onclick="scrollTo('#home')">Gustavo Reis Silva</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra-de-navegacao">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-			<li class="col-12 col-9 col-3 col-6">
-				<div class="cardBox">
-					<img class="picture" src="assets/media/img/rickmorty.jpg">
-					<p>Rick & Morty</p>	
-				</div>
-			</li>
+          <div class="collapse navbar-collapse navbar-right" id="barra-de-navegacao">
+            <ul class="nav navbar-nav ml-auto menu">
+              <li><a href="#sobre" class="nav-link" onclick="scrollTo('#sobre')">Sobre</a></li>
+              <li><a href="#objetivos" class="nav-link" onclick="scrollTo('#objetivos')">Objetivos</a></li>
+              <li><a href="#qualific" class="nav-link" onclick="scrollTo('#qualific')">Qualificações</a></li>
+              <li><a href="#exp" class="nav-link" onclick="scrollTo('#exp')">Experiências</a></li>
+              <li><a href="#curiosidades" class="nav-link" onclick="scrollTo('#curiosidades')">Curiosidades</a></li>
+            </ul>       
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Home -->
+    <div class="bg-img" id="home">
+      <div class="container">
 
-			<li class="col-12 col-9 col-3 col-6">
-				<div class="cardBox">
-					<img class="picture" src="assets/media/img/steven.jpg">
-					<p>Steven Universe</p>	
-				</div>
-			</li>
-		</ol>	
+        <div class="home">
+          <div class="col-sm-12 mx-auto">
+            Bem vindo. Meu nome é
+            <h1>Gustavo Reis Silva</h1>
+            <button class="btn btn-lg btn-sobre" onclick="scrollTo('#sobre')">Sobre mim</button>
+          </div>
+        </div>
+    <!-- Sobre -->
+        <div class="jumbotron jumbotron-fluid sobre" id="sobre">
+          <div class="border border-top-0 border-right-0 border-left-0 title">
+            <h2>Sobre</h2>
+          </div>
+      <!-- Descrição -->
+          <p class="col-sm-11 mx-auto">
+            &nbsp;  &nbsp;  &nbsp;  &nbsp;Sou um consumidor e sonhador de histórias. Nas horas em que não estou completamente perdido em outros
+            mundos me torno <b>Gustavo Reis Silva</b>, um estudante de Ciência da Computação na Universidade Federal de Lavras
+            (UFLA), atualmente também, trainee na empresa Comp Júnior.
+          </p>
+          <p class="col-sm-11 mx-auto">
+            &nbsp;  &nbsp;  &nbsp;  &nbsp;Interesso-me por desenvolvimento web e mobile e tenho uma pequena queda por algumas linguagens funcionais
+            como Haskell e Clojure além de uma curiosidade de canto de olho para com inteligência artificial, Machine Learning
+            e desenvolvimento de jogos.
+          </p>
+          <div class="container">
+            <div class="row">
+      <!-- Info-box -->
+              <div class="col col-12 col-lg-5 mx-auto"> 
+                <div class="card-box">
+                  <ul class="sobre-list">
+                    <li class="">
+                      <strong>Nome</strong>
+                      <span class="float-right">Gustavo Reis Silva</span>
+                    </li>
+                    <li class="">
+                      <strong>Idade</strong>
+                      <span class="float-right">21 anos</span>
+                    </li>
+                    <li class="">
+                      <strong>Data de Nasc.</strong>
+                      <span class="float-right">03 de julho de 1996</span>
+                    </li>
+                    <li class="">
+                      <strong>E-mail</strong>
+                      <span class="float-right">gureis4@gmail.com</span>
+                    </li>
+                    <li class="">
+                      <strong>Telefone</strong>
+                      <span class="float-right">(35) 9 8847-1668</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+      <!-- Minha foto -->
+              <div class="col col-11 col-lg-4 mx-auto">
+                <img class="img-fluid minhaFoto" src="img/minhaFoto.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    <!-- Objetivos -->
+    <br id="objetivos">
+    <br>
+    <br>
+    <div class="container">
+      <div class="border border-top-0 border-right-0 border-left-0 title">
+        <h2>Objetivos</h2>
+      </div>
+      <div class="row">
 
-	</div>
-	<div class="container">
-		<button class="button" id="ButtonNewCard" onclick="">Adicionar Cartão</button>		
-	</div>
-	<script type="text/javascript" src="assets/js/jQuery.js"></script>
-	<script type="text/javascript" src="assets/js/scripts.js"></script>
-	</body>
+        <div class="col col-10 col-md-6 col-lg-3 mx-auto card-box">
+            <img class="img-fluid picture" src="img/trophy-cup.svg">
+        </div>
+        <div class="col col-10 col-md-4 col-lg-2 mx-auto">
+          <p class="centro-obj">Conquistar uma vaga na empresa Comp Júnior como desenvolvedor.</p>
+        </div>
+
+        <div class="col col-10 col-md-6 col-lg-3 mx-auto card-box">
+            <img class="img-fluid picture" src="img/brain.svg">
+        </div>
+        <div class="col col-10 col-md-4 col-lg-2 mx-auto">
+          <p class="centro-obj">Continuar aprendendo novas tecnologias e conhecimentos úteis para o crescimento profissional e pessoal.</p>
+        </div>
+
+        <div class="col col-10 col-md-6 col-lg-3 mx-auto card-box">
+            <img class="img-fluid picture" src="img/link.svg">
+        </div>
+        <div class="col col-10 col-md-4 col-lg-2 mx-auto">
+          <p class="centro-obj">Conectar com mais pessoas para aumentar os laços pessoas e profissionais.</p>
+        </div>
+
+        <div class="col col-10 col-md-6 col-lg-3 mx-auto card-box">
+            <img class="img-fluid picture" src="img/graduate-diploma.svg">
+        </div>
+        <div class="col col-10 col-md-4 col-lg-2 mx-auto">
+          <p class="centro-obj">Formar com conhecimento e experiência para entrar direto no mercado de trabalho.</p>
+        </div>
+
+      </div>
+      <!-- Qualificações -->  
+      <br id="qualific">
+      <br>
+      <br>
+      <div class="border border-top-0 border-right-0 border-left-0 title">
+        <h2>Qualificações</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="rectangle"></div>
+      <div class="triangle-bottomleft"></div>
+      <div class="container">
+
+        <div class="row">
+            <div class="col col-10 col-md-5 mx-auto mb-3">Ensino Médio: </div>
+            <img class="col col-10 col-md-3 img-fluid float-right mx-auto" src="img/marista-varginha.png">
+        </div>
+
+        <div class="row center-qualif">
+            <div class="col col-10 col-md-5 mx-auto mb-3">Curso de Organização de Computadores: </div>
+            <img class="col col-10 col-md-3 img-fluid float-right mx-auto" style="width: 80%;" src="img/sos-logo.jpg">
+        </div>
+
+        <div class="row center-qualif">
+            <div class="col col-10 col-md-5 mx-auto mb-3">Curso de Inglês (2006 - 2012): </div>
+            <img class="col col-10 col-md-3 img-fluid float-right mx-auto" src="img/wizard-logo.jpg">
+        </div>
+
+        <div class="row center-qualif">
+            <div class="col col-11 col-md-5 mx-auto mb-3">
+              UFLA (Universidade Federal de Lavras):
+              <br>
+              &nbsp;  &nbsp;  &nbsp;  &nbsp; Previsão de formação: 01/2020
+            </div>
+            <img class="col col-10 col-md-3 img-fluid float-right mx-auto" src="img/ufla-logo.jpg">
+        </div>
+
+      </div>  
+      <div class="triangle-topright float-right"></div>
+      <div class="rectangle"></div>
+    </div>
+    <!-- Experiências -->
+    <br id="exp">
+    <div class="container">
+      <div class="border border-top-0 border-right-0 border-left-0 title mt-5">
+        <h2>Experiências</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="rectangle"></div>
+      <div class="triangle-bottomleft"></div>
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col col-11 col-md-6">
+            <h3 class="col col-11 mb-4">Space Shooter</h3>
+            <div class="container row">
+              <img class="col col-12 col-md-6 img-fluid mb-3" style="border-radius: 40px;" src="img/space-shooter.jpg">
+              <p class="col col-md-6">Space Shooter é um jogo em estilo arcade separado em “waves”, onde o objetivo é acumular a maior quantia de pontos.
+                  Foi desenvolvido usando a Unity Engine através das vídeo-aulas providas pela própria ferramenta.
+              </p>
+            </div>  
+          </div>
+          <div class="col col-11 col-md-6">
+            <h3 class="col col-11 mb-4">Trabalhos da Faculdade</h3>
+            <div class="container row">
+              <img class="col col-12 col-md-6 img-fluid mb-3" style="border-radius: 40px;" src="img/dcc-logo.png">
+              <p class="col col-md-6">Cerca de metade das tecnologias citadas abaixo foram aprendidas em sala de aula ou através de trabalhos e provas 
+                  realizados durante as disciplinas.
+              </p>
+            </div>  
+          </div>
+          <h4 class="col col-11 col-md-7 mx-auto mt-4 mb-3">Tecnologias e ferramentas com as quais já tive contato:</h4>
+          <div class="row col col-11 mx-auto">
+            <img class="col col-5 col-md-2 p-4 mr-1 img-fluid mb-3" src="img/html5-logo.png">
+            <img class="col col-5 col-md-2 p-4 mr-4 img-fluid mb-3" src="img/c-sharp-logo.png">
+            <img class="col col-5 col-md-2 p-4 mr-4 img-fluid mb-3" src="img/java-logo.png">
+            <img class="col col-5 col-md-2 p-4 mr-4 img-fluid mb-3" src="img/unity-logo.png">
+            <img class="col col-5 col-md-2 p-4 mr-4 img-fluid mb-3" src="img/javascript-logo.png">
+            <img class="col col-5 col-md-2 p-4 mr-4 img-fluid mb-3" src="img/css3-logo.png">
+            <img class="col col-5 col-md-2 p-4 mr-4 img-fluid mb-3" src="img/c++logo.png">
+            <img class="col col-5 col-md-2 p-4 mr-4 img-fluid mb-3" src="img/android-studio-logo.svg">
+            <img class="col col-5 col-md-2 p-4 mr-4 img-fluid mb-3" src="img/haskell-logo.png">
+            <img class="col col-5 col-md-2 p-4 mr-4 img-fluid mb-3" src="img/ue4-logo.png">
+          </div>
+        </div>
+      </div>  
+      <div class="triangle-topright float-right"></div>
+      <div class="rectangle"></div>
+    </div>
+    <!-- Curiosidades -->
+    <br id="curiosidades">
+    <div class="container">
+      <div class="border border-top-0 border-right-0 border-left-0 title mt-5">
+        <h2>Curiosidades</h2>
+      </div>
+      <div class="row">
+        <div class="col col-10 col-md-3 card-box mx-auto row">
+          <h5 class="mx-auto ff-title">In the Groove</h5>
+          <p class="col col-8 col-md-8">A música ocupa grande arte do meu tempo. Só em 2017 ouvi mais de 44.000 minutos de música em apenas no Spotify</p>
+          <img class="col col-4 img-fluid" src="img/spotify-logo.svg">
+        </div>
+        <div class="col col-10 col-md-3 card-box mx-auto row">
+          <h5 class="mx-auto title ff-title">The Game of Life</h5>
+        </div>
+        <div class="col col-10 col-md-3 card-box mx-auto row">
+          <h5 class="mx-auto ff-title">“Inspiration unlocks the future”</h5>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Scripts Personalizados -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
 </html>
