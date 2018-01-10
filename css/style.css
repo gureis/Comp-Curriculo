@@ -36,7 +36,7 @@ body {
 	color: black;
 	font-size: 42px;
 	text-align: center;
-	padding-top: 38%;
+	padding-top: 30%;
 	padding-bottom: 40%;
 }
 
@@ -116,7 +116,37 @@ h1 {
 }
 
 .ff-title {
+	padding-top: 3%;
 	font-weight: 700;
+}
+
+.footer {
+	background-color: #cf6433;
+	height: 65px;
+}
+
+.wrap {
+	width: 39px;
+}
+
+.square {
+	width: 50px;
+	height: 50px;
+	border-radius: 15px;
+	background: #cf6433;
+}
+
+.center-arrow {
+	margin-top: 15%;
+}
+
+.mini-txt {
+	font-size: 13px;
+}
+
+.mini-img {
+	margin: 0;
+	padding: 0;
 }
 
 @media (max-width: 767px) {
@@ -138,68 +168,68 @@ h1 {
 	}
  }
 
- @media (min-width: 1623px) {
- 	.rectangle {
-		width: 150px;
-		height: 670px; 
-		background: #cf6433;
-	 }
-
-	.triangle-bottomleft {
-		width: 0;
-		height: 0; 
-		border-bottom: 670px solid #cf6433; 
-		border-right: 100px solid transparent; 
-	}
-
-	.triangle-topright { 
-		width: 0; 
-		height: 0; 
-		border-top: 670px solid #cf6433; 
-		border-left: 100px solid transparent; 
-	}
- }
-
- @media (min-width: 1398px) and (max-width: 1622px){
- 	.rectangle {
-		width: 80px;
-		height: 650px; 
-		background: #cf6433;
-	 }
-
-	.triangle-bottomleft {
-		width: 0;
-		height: 0; 
-		border-bottom: 650px solid #cf6433; 
-		border-right: 50px solid transparent; 
-	}
-
-	.triangle-topright { 
-		width: 0; 
-		height: 0; 
-		border-top: 650px solid #cf6433; 
-		border-left: 50px solid transparent; 
-	}
- }
-
- @media (min-width: 1279px) and (max-width: 1397px) {
+@media (min-width: 1279px) and (max-width: 1397px) {
  	.rectangle {
 		width: 40px;
-		height: 650px; 
+		height: 850px; 
 		background: #cf6433;
 	 }
 
 	.triangle-bottomleft {
 		width: 0;
 		height: 0; 
-		border-bottom: 650px solid #cf6433; 
+		border-bottom: 850px solid #cf6433; 
 		border-right: 30px solid transparent; 
 	}
 
 	.triangle-topright { 
 		width: 0; 
 		height: 0; 
-		border-top: 650px solid #cf6433; 
+		border-top: 850px solid #cf6433; 
 		border-left: 30px solid transparent; 
 	}
- }
+}
+
+@media (min-width: 1398px) and (max-width: 1622px){
+ 	.rectangle {
+		width: 80px;
+		height: 850px; 
+		background: #cf6433;
+	 }
+
+	.triangle-bottomleft {
+		width: 0;
+		height: 0; 
+		border-bottom: 850px solid #cf6433; 
+		border-right: 50px solid transparent; 
+	}
+
+	.triangle-topright { 
+		width: 0; 
+		height: 0; 
+		border-top: 850px solid #cf6433; 
+		border-left: 50px solid transparent; 
+	}
+}
+
+@media (min-width: 1623px) {
+ 	.rectangle {
+		width: 150px;
+		height: 850px; 
+		background: #cf6433;
+	 }
+
+	.triangle-bottomleft {
+		width: 0;
+		height: 0; 
+		border-bottom: 850px solid #cf6433; 
+		border-right: 100px solid transparent; 
+	}
+
+	.triangle-topright { 
+		width: 0; 
+		height: 0; 
+		border-top: 850px solid #cf6433; 
+		border-left: 100px solid transparent; 
+	}
+}
