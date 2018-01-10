@@ -53,6 +53,7 @@ h1 {
 
 .btn-sobre:hover {
 	background-color: #ce4f17;
+	color: black;
 }
 
 .title {
@@ -116,7 +117,7 @@ h1 {
 }
 
 .ff-title {
-	padding-top: 3%;
+	padding-top: 1%;
 	font-weight: 700;
 }
 
